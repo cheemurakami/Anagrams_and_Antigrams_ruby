@@ -39,7 +39,7 @@ describe ("anagrams_checker") do
 
   it("compares if 2 words has different letters") do
     checker = Anagrams_Checker.new("Tea", "cat")
-    expect(checker.compare_words).to eq("These words have no letter matches and are antigrams.")
+    expect(checker.compare_words).to eq("These words aren't anagrams but 2 letters match: a, t.")
   end
   
   it("gives message when inputs are not actually words") do
@@ -60,6 +60,16 @@ describe ("anagrams_checker") do
   it("returns matched letters even if 2 inputs are not anagrams") do
     checker = Anagrams_Checker.new("cat!", "batty!")
     expect(checker.matched_letters).to eq(["a","t"])
+  end
+
+  it("returns matched letters even if 2 inputs are not anagrams") do
+    checker = Anagrams_Checker.new("cat!", "batty!")
+    expect(checker.compare_words).to eq( "These words aren't anagrams but 2 letters match: a, t.")
+  end
+
+  it("returns a message when 2 inputs do not match anything") do
+    checker = Anagrams_Checker.new("aqws", "derf")
+    expect(checker.compare_words).to eq( "These words have no letter matches and are antigrams.")
   end
   
 

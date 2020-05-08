@@ -18,8 +18,9 @@ This is a simple checker to check if two words are anagrams or not using Ruby.
 | **Spec 3: replace words into lowercase**| **"Tea", "Eat"** | **"tea", "eat"**
 | **Spec 4: Check if two inputs have vowels and y** | **"qws", "wsd"**| **"You need to input actual words!"**
 | **Spec 5: Remove if words have spaces and punctuations** | **"cat tub", "cat.tub"** |**"These words are anagrams."**
-| **Spec 6: combine two methods to show 3 kinds of messages** | **"Tea", "cat"** |**"These words have no letter matches and are antigrams."**
-
+| **Spec 6: Combine two methods to show 3 kinds of messages** | **"Tea", "cat"** |**"These words have no letter matches and are antigrams."**
+| **Spec 7: Display the message for matched letters when 2 inputs are not anagrams** | **"cat", "batty!"** |**"These words aren't anagrams but 2 letters match: a, t."**
+| **Spec 8: Put matched_letters method into compare_words method to show messages** | **"cat", "batty!"** |**"These words aren't anagrams but 2 letters match: a, t."**
 
 
 ## Setup/Installation Requirements

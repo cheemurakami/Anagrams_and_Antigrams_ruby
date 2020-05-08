@@ -25,21 +25,19 @@ class Anagrams_Checker
       word2arr = word2.gsub(/[^A-Za-z]/, '').split("").sort
       if word1arr === word2arr
         "These words are anagrams."
+      elsif  matched_letters.any? 
+        matched_letters_disp = matched_letters.join(", ")
+        "These words aren't anagrams but #{matched_letters.length} letters match: #{matched_letters_disp}."
       else
         "These words have no letter matches and are antigrams."
       end
     end
   end
 
-
   def matched_letters
     word1arr = word1.split("").sort
     word2arr = word2.split("").sort
     matched_letters = word1arr & word2arr
-
-    matched_letters_disp = matched_letters.join(", ")
-
-    "These words aren't anagrams but #{matched_letters.length} letters match: #{matched_letters_disp}."
   end
 
 end
