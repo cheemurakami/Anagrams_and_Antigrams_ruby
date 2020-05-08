@@ -14,7 +14,7 @@ This is a simple checker to check if two words are anagrams or not using Ruby.
 |  Behavior                 |  Input  | Output
 |---------------------------|---------|-------
 | **Spec 1: Check if inputs are words only in each argument in compare_words method**| **"123@#", "3&@?"**| **"You need to input actual words!"**
-| **Spec 2: Check if two inputs have the exact same letters**| **"tea", "eat"** | **"2 words have the same letters"**
+| **Spec 2: Check if two inputs have the exact same letters**| **"tea", "eat"** | **"These words are anagrams."**
 | **Spec 3: replace words into lowercase**| **"Tea", "Eat"** | **"tea", "eat"**
 | **Spec 4: Check if two inputs have vowels and y** | **"qws", "wsd"**| **"You need to input actual words!"**
 | **Spec 5: Remove if words have spaces and punctuations** | **"cat tub", "cat.tub"** |**"These words are anagrams."**
