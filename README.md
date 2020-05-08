@@ -13,7 +13,7 @@ This is a simple checker to check if two words are anagrams or not using Ruby.
 
 |  Behavior                 |  Input  | Output
 |---------------------------|---------|-------
-| **Spec 1: Check if inputs are words only in each argument in compare_words method**| "123@#", "3&@?"| "Please enter a word only!"
+| **Spec 1: Check if inputs are words only in each argument in compare_words method**| "123@#", "3&@?"| "You need to input actual words!"
 | **Spec 2: Check if two inputs have the exact same letters**| "Tea", "Eat" | "2 words have the same letters"
 | **Spec 3: ** | |
 | **Spec 4: ** | |

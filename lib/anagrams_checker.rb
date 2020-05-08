@@ -5,15 +5,25 @@ class Anagrams_Checker
     @word1 = word1.downcase
     @word2 = word2.downcase
   end
+  
+  def check_actual_words
+    word1arr = word1.split("").sort
+    word2arr = word2.split("").sort
+    vowels = ["a", "e", "i", "o","u","y"]
+    if !word1.match(/^[[:alpha:][:blank:]]+$/) || !word2.match(/^[[:alpha:][:blank:]]+$/) || word1arr & vowels == [] || word1arr & vowels == []
+    end
+      "You need to input actual words!"
+  end
 
   def compare_words
     word1arr = word1.split("").sort
     word2arr = word2.split("").sort
-    if !word1.match(/^[[:alpha:][:blank:]]+$/) || !word2.match(/^[[:alpha:][:blank:]]+$/)
-      return "Please enter a word only!"
-    elsif word1arr === word2arr
-      "2 words have the same letters"
+    if word1arr === word2arr
+      return "2 words have the same letters"
+    else
+      "These words have no letter matches and are antigrams."
     end
   end
+
 
 end
