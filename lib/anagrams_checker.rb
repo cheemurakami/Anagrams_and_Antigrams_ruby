@@ -10,14 +10,16 @@ class Anagrams_Checker
     word1arr = word1.split("").sort
     word2arr = word2.split("").sort
     vowels = ["a", "e", "i", "o","u","y"]
-    if !word1.match(/^[[:alpha:][:blank:]]+$/) || !word2.match(/^[[:alpha:][:blank:]]+$/) || word1arr & vowels == [] || word1arr & vowels == []
+    if word1.match(/[^A-Za-z]/) || word2.match(/[^A-Za-z]/) || word1arr & vowels == [] || word2arr & vowels == []
+      return "You need to input actual words!"
+    else
+      "Those are words."
     end
-      "You need to input actual words!"
   end
 
   def compare_words
-    word1arr = word1.split("").sort
-    word2arr = word2.split("").sort
+    word1arr = word1.gsub(/[^A-Za-z]/, '').split("").sort
+    word2arr = word2.gsub(/[^A-Za-z]/, '').split("").sort
     if word1arr === word2arr
       return "2 words have the same letters"
     else

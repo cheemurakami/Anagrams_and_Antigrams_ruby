@@ -46,6 +46,11 @@ describe ("anagrams_checker") do
     checker = Anagrams_Checker.new("qw$%[", "wsd")
     expect(checker.check_actual_words).to eq("You need to input actual words!")
   end
+
+  it("gives message when inputs have the same letters") do
+    checker = Anagrams_Checker.new("cat tab eww.", "tac bat eww")
+    expect(checker.compare_words).to eq("2 words have the same letters")
+  end
   
 
 end
