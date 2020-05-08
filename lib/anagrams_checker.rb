@@ -32,4 +32,10 @@ class Anagrams_Checker
   end
 
 
+  def matched_letters
+    word1arr = word1.split("").sort
+    word2arr = word2.split("").sort
+    matched_letters = word1arr & word2arr
+  end
+
 end

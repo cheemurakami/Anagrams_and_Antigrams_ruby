@@ -56,6 +56,11 @@ describe ("anagrams_checker") do
     checker = Anagrams_Checker.new("qw$%[", "wsd")
     expect(checker.compare_words).to eq("You need to input actual words!")
   end
+
+  it("returns matched letters even if 2 inputs are not anagrams") do
+    checker = Anagrams_Checker.new("cat!", "batty!")
+    expect(checker.matched_letters).to eq(["a","t"])
+  end
   
 
 end
