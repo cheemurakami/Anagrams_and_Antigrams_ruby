@@ -36,6 +36,10 @@ class Anagrams_Checker
     word1arr = word1.split("").sort
     word2arr = word2.split("").sort
     matched_letters = word1arr & word2arr
+
+    matched_letters_disp = matched_letters.join(", ")
+
+    "These words aren't anagrams but #{matched_letters.length} letters match: #{matched_letters_disp}."
   end
 
 end
