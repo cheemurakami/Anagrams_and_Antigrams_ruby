@@ -1,20 +1,20 @@
 # _Anagrams and Antigrams_
 
-https://github.com/cheemurakami/currentExchange
+https://github.com/cheemurakami/Anagrams_and_Antigrams_ruby
 
 #### Ruby for Epicodus, _05/8/2020_
 
 #### By _**Chisato Murakami**_
 
 ## Description
-This is a simple site to exchange currency using API calls.
+This is a simple checker to check if two words are anagrams or not using Ruby.
 
 ## Project Specefications
 
 |  Behavior                 |  Input  | Output
 |---------------------------|---------|-------
 | **Spec 1: Check if inputs are words only in each argument in compare_words method**| "123@#", "3&@?"| "Please enter a word only!"
-| **Spec 2: **| |
+| **Spec 2: Check if two inputs have the exact same letters**| "Tea", "Eat" | "2 words have the same letters"
 | **Spec 3: ** | |
 | **Spec 4: ** | |
 | **Spec 5: ** | |
@@ -29,7 +29,7 @@ _{You can clone this program to your desktop or download the zip file on this pa
 
 ## Known Bugs
 
-_{Fixed JavaScript bug below:
+_{Fixed Ruby bug below:
   }_
 
 ## Support and contact details
